@@ -1,0 +1,17 @@
+@import "../../untils/main.scss";
+
+.gallery {
+    width: 1240px;
+    min-height: 340px;
+    margin: 32px 0;
+    padding: 24px;
+    @include border-radius;
+  
+    background: $tertiary-color;
+  
+  .gallery ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

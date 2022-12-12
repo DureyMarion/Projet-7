@@ -1,0 +1,17 @@
+@import "../../untils/main.scss";
+
+.thumb-home {
+    @include flex-center;
+    width: 1240px;
+
+    @include border-radius;
+    background: $secondary-color;
+    margin: 43px 100px;
+
+    .thumb-box {
+        @include flex-center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 40px 0;
+    }
+}

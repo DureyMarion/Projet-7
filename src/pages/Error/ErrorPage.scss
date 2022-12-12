@@ -1,0 +1,30 @@
+@import "../../untils/main.scss";
+
+
+// Version Desktop
+.Error404 {
+  text-align: center;
+  
+  .Error404__status-code {
+    margin: 128px 0 64px 0;
+    font-size: 288px;
+    font-weight: 700;
+    color: $primary-color;
+  }
+  
+  .Error404__text {
+    font-size: $h2;
+    font-weight: 500;
+    color: $primary-color;
+  }
+  
+  .Error404__link-to-home {
+    display: inline-block;
+  
+    margin: 128px 0;
+  
+    color: $primary-color;
+    font-size: $h3;
+    text-decoration: underline; 
+  }
+}
