@@ -1,95 +1,188 @@
 @import "../../untils/main.scss";
 
-.logement_display {
-  .display_carousel {
-      margin: 27px 0 15px 0;
+.Advertisement__header {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  
+    padding: 2rem 0 0 0;
+  }
+  
+  .Advertisement__summary-box {
+    max-width: calc(100% - 16rem);
+    margin: 0 4rem 0 0;
+  }
+  
+  .Advertisement__title {
+    margin: 0;
+  
+    font-size: $h2;
+    line-height: 1.35;
+  }
+  
+  .Advertisement__location {
+    margin: 0.5rem 0;
+  
+    font-size: $h4;
+  }
+  
+  .Advertisement__tags-box {
+    margin: 1rem 0 0 0;
+  }
+  
+  .Advertisement__tag {
+    display: inline-block;
+  
+    margin: 0.25rem 1rem 0.25rem 0;
+    padding: 0.25rem 2rem;
+    border-radius: 0.5rem;
+  
+    color: white;
+  
+    background: $primary-color;
+  }
+  
+  .Advertisement__aside-box {
+    width: 12rem;
+  }
+  
+  .Advertisement__host-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .Advertisement__host-name {
+    margin: 0 1rem 0 0;
+  
+    font-size: $h4;
+  }
+  
+  .Advertisement__host-picture {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  
+    font-size: 10px;
+    text-align: center;
+  
+    background: $secondary-color;
+  }
+  
+  .Advertisement__rating {
+    margin: 1.5rem 0 0 0;
+  
+    text-align: right;
+  }
+  
+  .Advertisement__rating {
+    margin: 0 0 0 0.5rem;
+  
+    font-size: $h3;
+  }
+  
+  .Advertisement__collapses-box {
+    display: flex;
+    justify-content: space-between;
+  
+    margin: 0 0 2rem 0;
+  }
+  
+  .Advertisement__collapse {
+    width: 36rem;
   }
 
-  &_details {
-      display: flex;
+  @media screen and (max-width: 81.75rem) {
+    .Advertisement__header {
+      padding: 1.5rem 0 0 0;
+    }
+  
+    .Advertisement__title {
+      font-size: $h3;
+      line-height: 1.25;
+    }
+  
+    .Advertisement__rating i {
+      font-size: $h4;
+    }
+  
+    .Advertisement__collapse {
+      width: 25rem;
+    }
+  }
+  
+  @media screen and (max-width: 55.5rem) {
+    .Advertisement__header {
       flex-direction: column;
-  }
-
-  .logement_display_details {
-      margin-top: 5px;
-
-      .logement_description_left {
-          .logement_titles h1 {
-              font-weight: 500;
-              font-size: 18px;
-              line-height: 26px;
-          }
-
-          .logement_titles h2 {
-              font-weight: 500;
-              font-size: 14px;
-              line-height: 20px;
-          }
-      }
-      .logement_description_right {
-          .logement_owner_container {
-              margin: 6px 0 16px 0;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-
-              .logement_rating {
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-between;
-                  width: 98px;
-                  height: 18px;
-
-                  i {
-                      font-size: 18px;
-                  }
-              }
-              .logement_owner {
-                  display: flex;
-                  align-items: center;
-                  span {
-                      font-weight: 500;
-                      font-size: 12px;
-                      line-height: 17px;
-                      display: flex;
-                      justify-content: flex-end;
-                      align-items: center;
-                      text-align: right;
-                      width: 80px;
-                      height: 33px;
-                  }
-
-                  img {
-                      margin-left: 11px;
-                      width: 32px;
-                      height: 32px;
-                      border-radius: 50%;
-                  }
-              }
-          }
-      }
-  }
-
-  .logement_cards {
+  
+      padding: 0.5rem 0 0 0;
+    }
+  
+    .Advertisement__summary-box {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .Advertisement__title {
+      font-size: $h4;
+    }
+  
+    .Advertisement__location {
+      margin: 0.75rem 0;
+  
+      font-size: 16px;
+    }
+  
+    .Advertisement__tag {
+      font-size: 0,85rem;
+    }
+  
+    .Advertisement__aside-box {
       display: flex;
-      flex-direction: column;
+      flex-direction: row-reverse;
       justify-content: space-between;
+      align-items: center;
+  
       width: 100%;
-    
-      .logement_description {
-          width: 100%;
-          
-          margin-bottom: 20px;
-          ul li {
-              font-weight: 400;
-              font-size: 12px;
-              line-height: 17px;
-          }
-      }
-
-      .logement_equipements {
-          width: 100%;
-          }
-      }
+      margin: 1rem 0 0 0;
+    }
+  
+    .Advertisement__host-box {
+      justify-content: flex-end;
+      width: calc(100% - 9rem);
+    }
+  
+    .Advertisement__host-name {
+      font-size: 16px;
+    }
+  
+    .Advertisement__host-picture {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .Advertisement__rating {
+      width: 7rem;
+      margin: 0;
+  
+      text-align: left;
+    }
+  
+    .Advertisement__rating i {
+      margin: 0 0 0 0.25rem;
+  
+      font-size: 16px;
+    }
+  
+    .Advertisement__collapses-box {
+      flex-direction: column;
+    }
+  
+    .Advertisement__collapse {
+      width: 100%;
+    }
+  
+    .Advertisement__collapse .collapse {
+      margin: 1rem 0 0 0;
+    }
   }
-}
