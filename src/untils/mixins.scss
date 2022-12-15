@@ -9,6 +9,11 @@
     justify-content: space-between;
 }
 
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 // Mixins sur le rendu visuel de l'élément
 @mixin border-radius {
     border-radius: 25px;

@@ -1,71 +1,90 @@
 @import "../../untils/main.scss";
 
-.house__carousel{
+.house__carousel {
   width: 100%;
   height: 415px;
 }
-.number__styles{
-  display: flex;
+.number__styles {
+  @include flex-center;
+  align-items: center;
+
+  color: $tertiary-color;
   width: 100%;
-  justify-content: center;
-  height: 90%;
-  align-items: flex-end;
-  font-size: 17px;
+  
+  font-size: 18px;
   position: absolute;
-  top: 50%;
+  bottom: 24px;
   transform: translate(0, -50%);
 }
-.slider__styles{
+.slider__styles {
   height: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 25px;
+
+  margin: 0 100px;
 }
 
-.slide__styles-right{
+.slide__styles-right {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transform: translatex(100%);
 }
-.slide__styles-hide{
+.slide__styles-hide {
   transform: translatex(0);
 }
-.slide__styles-left{
+.slide__styles-left {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transform: translatex(-100%);
 }
-.right{
+.right {
   width: 100%;
   height: 100%;
   transition-duration: 0.6s;
   transform: translateX(-100%);
 }
-.left{
+.left {
   width: 100%;
   height: 100%;
   transition-duration: 0.6s;
   transform: translateX(100%);
 }
-.slide__styles-one{
+.slide__styles-one {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 25px;
 }
-.arrow{
+.arrow {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   cursor: pointer;
+  width: 47px;
 }
-.left__arrow{
+.left__arrow {
   left: 20px;
   z-index: 1;
 }
-.right__arrow{
+.right__arrow {
   right: 20px;
   z-index: 1;
+}
+
+
+@media screen and (max-width: 888px) {
+  .slider__styles {
+    margin: 0 20px;
+  }
+
+  .number__styles {
+    visibility: hidden;
+  }
+
+  .arrow {
+    width: 11px;
+  }
 }

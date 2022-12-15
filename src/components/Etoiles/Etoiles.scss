@@ -1,4 +1,11 @@
-.etoiles img {
-    width: 25px;
-    height: 25px;
+.star {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 888px) {
+    .star {
+        width: 15px;
+        height: 15px;
+    }
 }

@@ -9,7 +9,6 @@ footer {
   
     background: black;
   
-  
   img {
     margin: 48px 0 16px 0;
 
@@ -20,5 +19,16 @@ footer {
     color: $tertiary-color;
     font-size: $h3;
     font-weight: 500;
+  }
+}
+
+// Version Mobile & Tablette
+@media screen and (max-width: 1308px) {
+  footer img {
+    height: 32px;
+  }
+
+  footer p {
+    font-size: $h5;
   }
 }

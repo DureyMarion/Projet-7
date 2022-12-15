@@ -1,6 +1,5 @@
 @import "../../untils/main.scss";
 
-
 // Version Desktop
 .Error404 {
   text-align: center;
@@ -26,5 +25,29 @@
     color: $primary-color;
     font-size: $h3;
     text-decoration: underline; 
+  }
+}
+
+// Version Mobile & Tablette
+@media screen and (max-width: 888px) {
+  
+  .Error404 {
+    margin: 0 20px;
+
+    .Error404__status-code {
+      margin: 128px 0 16px 0;
+
+      font-size: 96px;
+    }
+
+    .Error404__text {
+      font-size: 18px;
+    }
+
+    .Error404__link-to-home {
+      margin: 64px 0;
+
+      font-size: 14px;
+    }
   }
 }

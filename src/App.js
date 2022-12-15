@@ -11,10 +11,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import reportWebVitals from './reportWebVitals';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faChevronDown, faChevronUp} from '@fortawesome/free-solid-svg-icons'
-
-library.add(faChevronDown, faChevronUp)
 
 function App() {
 return(
@@ -24,7 +20,7 @@ return(
 
           <Routes>
 					  <Route path="/" element={<Home />} />
-            <Route path="/location/id" element={<FicheLogement />} />
+            <Route path="/location/:id" element={<FicheLogement />} />
 					  <Route path="/a-propos" element={<About />} />
 		
 					  <Route path="*" element={<Error404 />} />

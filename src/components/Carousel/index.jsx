@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import ArrowLeft from "../../assets/vector-left.svg";
 import ArrowRight from "../../assets/vector-right.svg";
 
+import "./Carousel.scss";
+
 function Carousel(product) {
    const [currentIndex, setCurrentIndex] = useState(0);
    const [right, setRight] = useState(true);
-   const slides = product.data;
+   const slides = product.images;
 
    useEffect(() => {
       slides.forEach((image) => {

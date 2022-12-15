@@ -6,12 +6,12 @@
 
 .hero-banner {
   position: relative;
-    
-  
+
   width: 1240px;
   height: 223px;
   @include border-radius;
   overflow: hidden;
+  margin: 0 40px;
   
   background-color: $tertiary-color;
 
@@ -41,5 +41,22 @@
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
   
     transform: translate(-50%, -50%);
+  }
+}
+
+// Version Mobile & Tablette
+@media screen and (max-width: 888px) {
+  .hero-banner {
+    height: 112px;
+    margin: 20px;
+  }
+
+  .hero-banner h1 {
+    font-size: $h3;
+    text-align: left;
+  
+    left: 40%;
+
+    width: 65%;
   }
 }

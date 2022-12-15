@@ -21,3 +21,10 @@
     filter: brightness(70%);
   }
 }
+
+// Version Mobile & Tablette
+@media screen and (max-width: 888px) {
+  .hero-banner {
+    height: 112px;
+  }
+}

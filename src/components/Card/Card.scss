@@ -1,6 +1,6 @@
 @import "../../untils/main.scss";
   
-
+// Version Desktop
 .card {
   max-width: 1024px;
   margin: 32px auto;
@@ -66,4 +66,34 @@
 
   opacity: 0;
 }
+
+.card__icon {
+  padding-top: 7px;
+}
+}
+
+// Version Mobile & Tablette
+@media screen and (max-width: 1308px) {
+  .card {
+    margin: 16px auto;
+  
+
+    .card__title,
+    .card__text {
+      line-height: 21px;
+      font-size: $h5;
+    }
+
+    .card__title span {
+      padding: 2px 0;
+    }
+
+    .card__title i {
+      padding: 4px 0;
+    }
+
+    .card__text {
+      padding: 16px;
+    }
+  }
 }

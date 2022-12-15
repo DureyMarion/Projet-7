@@ -16,20 +16,20 @@ class Thumb extends React.Component {
     const { id, cover, title,location } = this.props
     return (
       <Link
-        className="thumbnail-wrapper"
+        className="thumb-wrapper"
         to={`/location/${id}`}
         onClick={() => window.scrollTo(0, 0)}
       >
-        <article className="thumbnail">
+        <article className="thumb">
           <img
-            className="thumbnail__cover"
+            className="thumb__cover"
             src={cover}
             alt={`Une location située en ${location}`}
           />
 
-          <div className="thumbnail__filter"></div>
+          <div className="thumb__filter"></div>
 
-          <h2 className="thumbnail__title">{title}</h2>
+          <h2 className="thumb__title">{title}</h2>
         </article>
       </Link>
     );

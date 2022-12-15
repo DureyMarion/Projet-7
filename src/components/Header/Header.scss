@@ -1,11 +1,11 @@
 @import "../../untils/main.scss";
 
+// Version Desktop
 header {
   @include flex-between;
   align-items: center;
   
   margin: 57px 100px;
-  
   
   .main-nav ul {
     display: flex;
@@ -27,5 +27,29 @@ header {
   .active-link {
     text-decoration: underline;
   }
+}
 
+// Version Mobile & Tablette
+@media screen and (max-width: 888px) {
+  header {
+    margin: 20px;
+
+    .header-logo {
+      height: 32px;
+    }
+
+    .main-nav ul {
+      padding: 10px;
+    }
+    
+    .main-nav li {
+      margin: 0 0 0 10px;
+      
+    }
+
+    .header-link {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
 }

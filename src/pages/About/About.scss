@@ -1,1 +1,21 @@
 @import "../../untils/main.scss";
+
+// Version Desktop
+.About {
+    padding: 16px;
+}
+
+// Version Mobile & Tablette
+@media screen and (max-width: 888px) {
+    .About {
+      padding: 0;
+    }
+  
+    .About .banner {
+        padding: 0 20px;
+    }
+  
+    .About .card-box {
+        margin: 0 20px;
+    }
+  }
